@@ -9,6 +9,7 @@ get:
       name: ApiKey
       schema:
         type: string
+      required: true
   security: []
   responses:
     '200':
