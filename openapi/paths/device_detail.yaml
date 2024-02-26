@@ -8,9 +8,7 @@ get:
     - in: header
       name: ApiKey
       schema:
-        type: string
-  security:
-   
+        type: string   
   responses:
     '200':
       description: OK
