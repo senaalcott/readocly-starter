@@ -49,7 +49,7 @@ servers:
         description: Your tenant id
   - url: https://gtdev-api.gullytech.io/api
 paths:
-  /GullyDetail:
+  /DeviceDetail:
     $ref: paths/device_detail.yaml
 components:
   securitySchemes:
