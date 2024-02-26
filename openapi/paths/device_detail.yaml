@@ -1,0 +1,53 @@
+get:
+  tags:
+    - Gully Api
+  summary: List Device Detail
+  description: Get all device detail
+  operationId: echo
+  parameters: 
+    - in: header
+      name: ApiKey
+      schema:
+        type: string
+  security:
+   
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            type: string
+          examples:
+            response:
+              value: [
+                        {
+                        "gullyCode" : "GT02-006",
+                        "iccid" : "1156122082709901550",
+                        "addresses" : "58 Millbanks, London, Greater London, TN17 1HB, United Kingdom",
+                        "kaarbontechId" : "-",
+                        "waterLevel" : "100.00",
+                        "riskStatus" : "Replace Device"
+                        },
+                        {
+                        "gullyCode" : "GT02-076",
+                        "iccid" : "1156122082709901555",
+                        "addresses" : "London UK, London, London, Greater London, SW1E 6DE, United Kingdom",
+                        "kaarbontechId" : "-",
+                        "waterLevel" : "81.51",
+                        "riskStatus" : "Replace Device"
+                        }
+                      ]
+    '400':
+      description: Your API Keys is not found
+    '401':
+      description: You do not have authorization to access this.
+    '419':
+      description: Your request limit has been exceeded, will reset at times
+  x-codeSamples:
+    - lang: C#
+      source:
+        $ref: ../code_samples/C_sharp/echo/post.cs
+    - lang: PHP
+      source:
+        $ref: ../code_samples/PHP/echo/post.php

@@ -39,28 +39,18 @@ info:
     interfaces have done for lower-level programming, OpenAPI removes the
     guesswork in calling the service.
 tags:
-  - name: Echo
-    description: Example echo operations.
-  - name: User
-    description: Operations about users.
-  - name: Tag
-    description: This is a tag description.
+  - name: Gully Api
+    description: Operations about Gully Api.
 servers:
   - url: https://{tenant}/api/v1
     variables:
       tenant:
         default: www
         description: Your tenant id
-  - url: https://example.com/api/v1
+  - url: https://gtdev-api.gullytech.io/api
 paths:
-  /users/{username}:
-    $ref: paths/users_{username}.yaml
-  /echo:
-    $ref: paths/echo.yaml
-  /pathItem:
-    $ref: paths/pathItem.yaml
-  /pathItemWithExamples:
-    $ref: paths/pathItemWithExamples.yaml
+  /GullyDetail:
+    $ref: paths/device_detail.yaml
 components:
   securitySchemes:
     main_auth:
