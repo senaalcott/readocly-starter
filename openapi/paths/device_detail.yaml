@@ -44,10 +44,3 @@ get:
       description: You do not have authorization to access this.
     '419':
       description: Your request limit has been exceeded, will reset at times
-  x-codeSamples:
-    - lang: C#
-      source:
-        $ref: ../code_samples/C_sharp/echo/post.cs
-    - lang: PHP
-      source:
-        $ref: ../code_samples/PHP/echo/post.php
