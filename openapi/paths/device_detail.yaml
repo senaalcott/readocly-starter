@@ -3,7 +3,7 @@ get:
     - Gully Api
   summary: List Device Detail
   description: Get all device detail
-  operationId: device detail
+  operationId: DeviceDetail
   parameters: 
     - in: header
       name: ApiKey
